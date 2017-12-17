@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="WeatherCell" customModule="Wether" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kk7-gM-65t">
+                    <rect key="frame" x="6" y="4" width="26" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="100" id="DTh-PM-GJJ">
+                        <font key="font" size="13" name="HelveticaNeue"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="o6R-Uu-3pu">
+                    <rect key="frame" x="93" y="4" width="26" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="100" id="Rqx-l6-jcF">
+                        <font key="font" size="13" name="HelveticaNeue"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nIN-mw-EIM">
+                    <rect key="frame" x="30" y="30" width="65" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="Zt2-w6-kO9"/>
+                        <constraint firstAttribute="width" constant="65" id="jlC-hH-oUM"/>
+                    </constraints>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="Clear" id="tTA-XK-3BL"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9lD-Vm-lcQ">
+                    <rect key="frame" x="38" y="106" width="49" height="19"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Sunday" id="ozG-Fi-aCH">
+                        <font key="font" size="13" name="HelveticaNeue"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="9lD-Vm-lcQ" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="3JS-qr-QJr"/>
+                <constraint firstItem="Kk7-gM-65t" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="8" id="BIb-r9-A9P"/>
+                <constraint firstItem="nIN-mw-EIM" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="BpV-Su-ca2"/>
+                <constraint firstAttribute="bottom" secondItem="Kk7-gM-65t" secondAttribute="bottom" constant="4" id="EPF-8s-9hE"/>
+                <constraint firstItem="nIN-mw-EIM" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="HWv-Mx-mSm"/>
+                <constraint firstItem="9lD-Vm-lcQ" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="LdM-Zm-iTu"/>
+                <constraint firstAttribute="bottom" secondItem="o6R-Uu-3pu" secondAttribute="bottom" constant="4" id="Sjs-oP-Pvd"/>
+                <constraint firstAttribute="trailing" secondItem="o6R-Uu-3pu" secondAttribute="trailing" constant="8" id="bSz-zO-xnx"/>
+            </constraints>
+            <point key="canvasLocation" x="139.5" y="168.5"/>
+        </customView>
+        <collectionViewItem id="xcE-5X-zL2" customClass="WeatherCell" customModule="Wether" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Hz6-mo-xeY" id="sa3-hk-Esl"/>
+            </connections>
+        </collectionViewItem>
+    </objects>
+    <resources>
+        <image name="Clear" width="107" height="107"/>
+    </resources>
+</document>
