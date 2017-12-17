@@ -23,7 +23,7 @@ class WeatherService {
     }
   }
   
-  func downloadWeatherDetaials () {
+  func downloadWeatherDetaials (completed: @escaping DownloadComplete) {
     Alamofire.request(
       API_URL_CURRENT_WEATHER,
       method: .get,
@@ -32,9 +32,7 @@ class WeatherService {
       headers: HTTP_HEADER
     ).responseData { (response) in
         self.currentWeather = CurrentWeather.loadCurrentWeatherFromDate(response.data!)
-        print(self.currentWeather.currentTemp)
-        print(self.currentWeather.date)
-       print(self.currentWeather.weatherType)
+        completed()
     }
   }
   

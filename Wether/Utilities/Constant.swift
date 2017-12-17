@@ -7,9 +7,13 @@
 //
 
 import Foundation
+// comprission handerer -> promiss in javascript
+typealias DownloadComplete = () -> ()
 
+// url
 let API_KEY = "&appid=9cf11f8bcfe6cd49c9addc927939e5b9"
-let API_URL_CURRENT_WEATHER = "http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139\(API_KEY)"
+let API_UNITS = "&units=imperial"
+let API_URL_CURRENT_WEATHER = "http://api.openweathermap.org/data/2.5/weather?lat=35&lon=139\(API_KEY)\(API_UNITS)"
 
 // http header
 let HTTP_HEADER = [

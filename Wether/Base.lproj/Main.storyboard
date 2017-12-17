@@ -707,11 +707,11 @@
             <objects>
                 <viewController storyboardIdentifier="WetherVC" id="XfG-lQ-9wD" customClass="WetherVC" customModule="Wether" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="380"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="horizontal" alignment="bottom" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8wW-U0-W2p">
-                                <rect key="frame" x="20" y="244" width="360" height="136"/>
+                                <rect key="frame" x="20" y="224" width="360" height="136"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2gI-5o-beM">
                                         <rect key="frame" x="0.0" y="0.0" width="133" height="136"/>
@@ -792,14 +792,14 @@
                                 </customSpacing>
                             </stackView>
                             <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oO-4t-puO">
-                                <rect key="frame" x="20" y="74" width="360" height="150"/>
+                                <rect key="frame" x="20" y="54" width="360" height="150"/>
                                 <clipView key="contentView" drawsBackground="NO" id="iI7-8G-hE1">
                                     <rect key="frame" x="0.0" y="0.0" width="360" height="150"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <collectionView id="s55-L7-j75">
                                             <rect key="frame" x="0.0" y="0.0" width="360" height="158"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask" heightSizable="YES"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" scrollDirection="horizontal" id="cuk-8Q-9Sn">
                                                 <size key="itemSize" width="125" height="125"/>
                                                 <edgeInsets key="sectionInset" left="10" right="10" top="0.0" bottom="0.0"/>

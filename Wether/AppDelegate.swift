@@ -18,7 +18,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // Insert code here to initialize your application
     statusItem.button?.title = "--°"
     statusItem.action = #selector(AppDelegate.displayPopUp(_:))
-    WeatherService.instance.downloadWeatherDetaials()
+    WeatherService.instance.downloadWeatherDetaials {
+      self.statusItem.button?.title = "\(WeatherService.instance.currentWeather.currentTemp)°"
+    }
+
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {
