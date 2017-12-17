@@ -10,11 +10,15 @@ import Cocoa
 
 class WeatherCell: NSCollectionViewItem {
 
-    override func viewDidLoad() {
-      super.viewDidLoad()
-        // Do view setup here.
-      self.setUpView()
-    }
+  @IBOutlet weak var cellImage: NSImageView!
+  @IBOutlet weak var cellDate: NSTextField!
+  @IBOutlet weak var highTemp: NSTextField!
+  @IBOutlet weak var lowTemp: NSTextField!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    self.setUpView()
+  }
   
   func setUpView () {
     self.view.wantsLayer = true

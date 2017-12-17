@@ -7,6 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="WeatherCell" customModule="Wether" customModuleProvider="target">
             <connections>
+                <outlet property="cellDate" destination="9lD-Vm-lcQ" id="45S-9u-GBr"/>
+                <outlet property="cellImage" destination="nIN-mw-EIM" id="mSl-VA-kBe"/>
+                <outlet property="highTemp" destination="Kk7-gM-65t" id="JDR-yh-Tx2"/>
+                <outlet property="lowTemp" destination="o6R-Uu-3pu" id="R4K-Kk-NCj"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
